@@ -46,7 +46,9 @@ RUN apt-get install -y\
     bsdmainutils\
     uuid-runtime\
     ftp\
-    zsh
+    zsh\
+    tree\
+    emacs
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y\
     smem\
@@ -54,6 +56,13 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y\
     mc\
     sshfs\
     inxi
+
+## exa
+RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
+RUN wget https://github.com/ogham/exa/releases/download/v0.9.0/exa-linux-x86_64-0.9.0.zip
+RUN unzip exa-linux-x86_64-0.9.0.zip
+RUN mv exa-linux-x86_64 /usr/local/bin/exa
+RUN rm exa-linux-x86_64-0.9.0.zip
 
 ## bashtop
 RUN git clone https://github.com/aristocratos/bashtop.git
