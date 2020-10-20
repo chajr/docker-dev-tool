@@ -48,11 +48,8 @@ RUN apt-get install -y\
     ftp\
     zsh\
     tree\
-    emacs\
     pydf\
-    node-file-sync-cmp\
     fdupes\
-    qemu-utils\
     exiftool\
     swaks\
     iptraf\
@@ -63,7 +60,10 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y\
     mtr\
     mc\
     sshfs\
-    inxi
+    inxi\
+    qemu-utils\
+    node-file-sync-cmp\
+    emacs
 
 ## exa
 RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
