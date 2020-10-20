@@ -23,6 +23,13 @@ Usage tools on host OS:
 * **mc** - file manager
 * **tree** - display file structure as tree
 * **exa** - a modern replacement for ‘ls’
+* **cmp** - compare two files byte by byte
+* **bat** - a cat(1) clone with syntax highlighting and Git integration
+* **ag** - very fast grep-like program, alternative to ack-grep
+* **hexdump** - dump file contents into many formats like hexadecimal, octal, ASCII and decimal
+* **fmt** - formatter for simplifying and optimizing text files
+* **fdupes** - find duplicated files
+* **exiftool** - read file metadata
 
 ### Editors
 
@@ -44,6 +51,9 @@ Usage tools on host OS:
 * **lsof** - display opened files & programs that using them
 * **pidstat** - monitor and find statistics for linux processes
 * **osquery** - an operating system instrumentation framework
+* **pydf** - python version of df
+* **qemu-io** - QEMU disk exerciser
+* **pstree** - shows running processes as a tree
 
 ### Network
 
@@ -69,19 +79,21 @@ Usage tools on host OS:
 * **ftp** - file transfer protocol
 * **sshfs** - mount directories by ssh
 * **rsync** - synchronize files & directories
+* **qemu-nbd** - QEMU disk network block device server
+* **swaks** - allow sending simple email
+* **iptraf** - network monitor
 
 ### Databases
 
 * **mytop** - MySQL - performance monitor
 * **innotop** - MySQL and InnoDB transaction/status monitor
+* **mysql** - mysql client
+* **mysqldump** - dump mysql database
 
 ### Other tools
 
-* **bat** - a cat(1) clone with syntax highlighting and Git integration
-* **ag** - very fast grep-like program, alternative to ack-grep
 * **tig** - git cli interface
 * **jp2a** - display images in cli as ascii
-* **hexdump** - dump file contents into many formats like hexadecimal, octal, ASCII and decimal
-* **fmt** - formatter for simplifying and optimizing text files
 * **multitail** - tail on multiple hosts in same time
 * **lnav** - log navigator, watch logs in real time and format output
+* **qemu-img**-  QEMU disk image utility, allow to convert images

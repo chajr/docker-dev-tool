@@ -48,7 +48,15 @@ RUN apt-get install -y\
     ftp\
     zsh\
     tree\
-    emacs
+    emacs\
+    pydf\
+    node-file-sync-cmp\
+    fdupes\
+    qemu-utils\
+    exiftool\
+    swaks\
+    iptraf\
+    psmisc
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y\
     smem\
