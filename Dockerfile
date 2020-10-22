@@ -92,3 +92,13 @@ RUN perl Makefile.PL
 RUN make install
 RUN rm -r /innotop
 WORKDIR /
+
+## setup bashrc
+COPY ./.bashrc /root/
+
+## setup oh-my-zsh
+RUN yes -n | sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+RUN git clone https://github.com/zsh-users/zsh-autosuggestions /root/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+RUN git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /root/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+COPY ./.zshrc /root/
+COPY ./docker_agnoster.zsh-theme /root/.oh-my-zsh/themes/
