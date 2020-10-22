@@ -102,3 +102,5 @@ RUN git clone https://github.com/zsh-users/zsh-autosuggestions /root/.oh-my-zsh/
 RUN git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /root/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 COPY ./.zshrc /root/
 COPY ./docker_agnoster.zsh-theme /root/.oh-my-zsh/themes/
+
+COPY ./aliases.sh /root/

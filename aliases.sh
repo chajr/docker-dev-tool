@@ -1,0 +1,16 @@
+alias ll="ls -laFh"
+alias l="ls -lFh"
+alias lls="ll -S"
+alias llt="ll -t"
+alias lt="l -t"
+
+alias tree-full="tree -ugphD"
+
+alias le="exa -lhg --group-directories-first --git --time-style long-iso --color=always"
+alias lle="le -a"
+alias let="le --tree"
+alias llet="lle --tree"
+alias llem="lle -s modified"
+alias llen="lle -s name"
+alias lles="lle -s size"
+alias lletd="llet | grep -v '^\.' --color=never"

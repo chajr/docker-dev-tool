@@ -29,3 +29,5 @@ PROMPT_COMMAND='PS1="${c_user}docker-tools${c_reset}@${c_host}\h${c_reset}:${c_p
 git-root() {
 	cd "$(git proot)"
 }
+
+[[ -e ~/aliases.sh ]] && source ~/aliases.sh
