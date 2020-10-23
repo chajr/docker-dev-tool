@@ -54,6 +54,9 @@ Usage tools on host OS:
 * **pydf** - python version of df
 * **qemu-io** - QEMU disk exerciser
 * **pstree** - shows running processes as a tree
+* **atop** - interactive monitor to view the system load
+* **nmon** - performance system monitor tool
+* **iozone** - filesystem benchmark
 
 ### Network
 

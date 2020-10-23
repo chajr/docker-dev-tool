@@ -53,7 +53,10 @@ RUN apt-get install -y\
     exiftool\
     swaks\
     iptraf\
-    psmisc
+    psmisc\
+    atop\
+    nmon\
+    iozone3
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y\
     smem\
@@ -80,7 +83,7 @@ RUN rm -r /bashtop
 WORKDIR /
 
 ## install osquery
-COPY osquery_4.5.1_1.linux.amd64.deb /
+RUN wget https://pkg.osquery.io/deb/osquery_4.5.1_1.linux.amd64.deb
 RUN apt-get install /osquery_4.5.1_1.linux.amd64.deb
 RUN rm osquery_4.5.1_1.linux.amd64.deb
 
